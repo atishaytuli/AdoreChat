@@ -25,7 +25,7 @@ function Hero() {
               </div>
 
               <div className="text-center lg:text-left">
-                <p className="text-base font-semibold tracking-wider text-violet-500 font-[Roboto]">
+                <p className="text-base font-semibold tracking-wider text-[#7D6EC0] font-[Roboto] font-semibold">
                   For lovers who never want to be apart,
                 </p>
                 <h1 className="mt-4 text-3xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-7xl font-[Roboto]">

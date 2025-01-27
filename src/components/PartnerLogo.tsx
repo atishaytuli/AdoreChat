@@ -12,10 +12,10 @@ function PartnerLogo() {
               <h2
                 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj leading-tight"
               >
-                Trusted by Couples Worldwide
+                Bringing ❤️ Together Across Borders !
               </h2>
               <p className="mt-6 text-lg font-normal text-gray-600 font-pj">
-                Join thousands of loving couples who use AdoreChat to stay connected and share precious moments, no matter the distance between them.
+                Trusted by 10,000+ couples worldwide who use AdoreChat to stay connected and share precious moments, no matter the distance between them.
               </p>
             </div>
 

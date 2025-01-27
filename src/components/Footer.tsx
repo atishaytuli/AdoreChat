@@ -1,9 +1,18 @@
+import Pop from './Pop';
+import { useNavigate } from 'react-router-dom';
+
 function Footer() {
+  const navigate = useNavigate();
+
+  const handleVideoCall = () => {
+    navigate('/pop');
+  };
+
   return (
     <>
     <footer className="py-12 bg-white sm:pt-16 lg:pt-20">
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-    <img src="./pink.jpg" alt="Couple connecting" className="w-full h-[600px] object-cover rounded-lg mb-22" />
+    <img src="./pink.jpg" alt="Couple connecting" className="w-full h-[600px] object-cover rounded-lg mb-22" style={{ background: "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)" }}/>
         <div className="max-w-2xl mx-auto text-center">
             <h5 className="text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">Connect with your loved one anytime, anywhere!</h5>
 
@@ -13,11 +22,11 @@ function Footer() {
                     style={{background: "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"}}
                 ></div>
 
-                <a href="#" title="" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">Start Video Call</a>
+                <button onClick={handleVideoCall} className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 cursor-pointer">Start Video Call</button>
             </div>
         </div>
 
-        <div className="lg:flex lg:items-center lg:justify-between mt-14 lg:mt-44">
+        <div className="lg:flex lg:items-center lg:justify-between mt-14 lg:mt-52">
             <div>
                 <img className="w-auto h-5 mx-auto lg:mx-0" src="./logo2.png" alt="AdoreChat Logo" />
             </div>

@@ -5,7 +5,7 @@ function Testimonial() {
     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex flex-col items-center">
             <div className="text-center">
-                <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">Hear from couples who stay connected with AdoreChat</h2>
+                <h2 className="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl leading-16">Hear from couples who stay connected with AdoreChat Always.</h2>
             </div>
 
             <div className="mt-8 text-center md:mt-16 md:order-3">
