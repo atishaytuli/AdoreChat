@@ -7,14 +7,14 @@ import Hero from "./Hero"
 
 function Home() {
   return (
-   <>
-    <Nav />
-    <Hero />
-    <PartnerLogo />
-    <Testimonial />
-    <Faq />
-    <Footer />
-   </>
+    <>
+      <Nav />
+      <Hero />
+      <PartnerLogo />
+      <Testimonial />
+      <Faq />
+      <Footer />
+    </>
   )
 }
 

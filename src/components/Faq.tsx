@@ -28,7 +28,7 @@ function Faq() {
 
                 <div className="relative overflow-hidden bg-white border border-gray-200 rounded-xl">
                   <h3>
-                    <button onClick={toggleFaq} className="flex items-center justify-between w-full px-6 py-5 text-xl font-bold text-left text-gray-900 sm:p-8 font-pj">
+                    <button onClick={toggleFaq} className="flex items-center justify-between w-full px-6 py-5 md:text-xl text-md font-bold text-left text-gray-900 sm:p-8 font-pj">
                       <span>Is AdoreChat really free to use?</span>
                       <span className="ml-4">
                         <svg className="w-6 h-6 text-gray-900 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -45,7 +45,7 @@ function Faq() {
 
               <div className="overflow-hidden bg-white border border-gray-200 rounded-xl">
                 <h3>
-                  <button onClick={toggleFaq} className="flex items-center justify-between w-full px-6 py-5 text-xl font-bold text-left text-gray-900 sm:p-8 font-pj">
+                  <button onClick={toggleFaq} className="flex items-center justify-between w-full px-6 py-5 text-md md:text-xl font-bold text-left text-gray-900 sm:p-8 font-pj">
                     <span>What do I need to start a video call?</span>
                     <span className="ml-4">
                       <svg className="w-6 h-6 text-gray-900 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -61,7 +61,7 @@ function Faq() {
 
               <div className="overflow-hidden bg-white border border-gray-200 rounded-xl">
                 <h3>
-                  <button onClick={toggleFaq} className="flex items-center justify-between w-full px-6 py-5 text-xl font-bold text-left text-gray-900 sm:p-8 font-pj">
+                  <button onClick={toggleFaq} className="flex items-center justify-between w-full px-6 py-5 text-md md:text-xl font-bold text-left text-gray-900 sm:p-8 font-pj">
                     <span>How good is the video quality?</span>
                     <span className="ml-4">
                       <svg className="w-6 h-6 text-gray-900 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -77,7 +77,7 @@ function Faq() {
 
               <div className="overflow-hidden bg-white border border-gray-200 rounded-xl">
                 <h3>
-                  <button onClick={toggleFaq} className="flex items-center justify-between w-full px-6 py-5 text-xl font-bold text-left text-gray-900 sm:p-8 font-pj">
+                  <button onClick={toggleFaq} className="flex items-center justify-between w-full px-6 py-5 text-md md:text-xl font-bold text-left text-gray-900 sm:p-8 font-pj">
                     <span>Is my video call private and secure?</span>
                     <span className="ml-4">
                       <svg className="w-6 h-6 text-gray-900 transition-transform duration-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

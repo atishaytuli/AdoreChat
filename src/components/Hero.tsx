@@ -1,15 +1,17 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Hero() {
   const [input, setInput] = useState("");
+  const navigate = useNavigate();
 
   const submitHandler = (e: React.FormEvent) => {
     e.preventDefault();
-    if(input) {
-      window.location.href = `/room/${input}`;
+    if (input) {
+      navigate(`/room/${input}`);
     }
   }
-  
+
   return (
     <>
       <div className="bg-gray-50">
@@ -25,14 +27,14 @@ function Hero() {
               </div>
 
               <div className="text-center lg:text-left">
-                <p className="text-base font-semibold tracking-wider text-[#7D6EC0] font-[Roboto] font-semibold">
+                <p className="text-base tracking-wider text-[#7D6EC0] font-[Roboto] font-semibold">
                   For lovers who never want to be apart,
                 </p>
                 <h1 className="mt-4 text-3xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-7xl font-[Roboto]">
                   Because every moment matters.
                 </h1>
                 <p className="mt-4 text-base text-black lg:mt-12 sm:text-xl font-semibold font-[Roboto]">
-                  Share your moments, feelings, and love with AdoreChat –– the perfect space for couples to stay close Everytime.
+                  Share your moments, feelings, and love with AdoreChat – the perfect space for couples to stay close Everytime.
                 </p>
 
                 <style>
@@ -50,12 +52,12 @@ function Hero() {
                       type="text"
                       value={input}
                       onChange={(e) => setInput(e.target.value)}
-                      placeholder="Enter room code"
-                      className="px-6 py-4 mt-8 font-semibold text-gray-700 bg-white border-2 border-[#FE436A] rounded-md lg:mt-16 w-[300px] focus:outline-none focus:border-[#FF69B4] font-[Roboto]"
+                      placeholder="Enter room code to Join"
+                      className="md:px-6 md:py-4 mt-8 px-4 py-3 font-semibold text-gray-700 bg-white border-2 border-[#FE436A] rounded-md lg:mt-16 w-[300px] focus:outline-none focus:border-[#FF69B4] font-[Roboto]"
                     />
                     <button
                       type="submit"
-                      className="absolute right-0 inline-flex items-center px-6 py-4 mt-8 font-semibold text-white transition-all duration-200 bg-[#FE436A] rounded-md lg:mt-16 hover:bg-[linear-gradient(to_right,#FE436A_0%,#FE436A_33.3%,#FF69B4_33.3%,#FF69B4_66.6%,#9400D3_66.6%,#9400D3_100%)] hover:animate-[dance6123_2s_linear_infinite] hover:scale-110 hover:-translate-y-1 font-[Roboto]"
+                      className="absolute right-0 inline-flex items-center px-6 py-4 md:mt-8 mt-6 font-semibold text-white transition-all duration-200 bg-[#FE436A] rounded-md lg:mt-16 hover:bg-[linear-gradient(to_right,#FE436A_0%,#FE436A_33.3%,#FF69B4_33.3%,#FF69B4_66.6%,#9400D3_66.6%,#9400D3_100%)] hover:animate-[dance6123_2s_linear_infinite] hover:scale-110 hover:-translate-y-1 font-[Roboto]"
                     >
                       <svg
                         className="w-6 h-6"
@@ -87,7 +89,6 @@ function Hero() {
                 </p>
               </div>
 
-              {/* Desktop image - hidden on small screens, shown on large screens */}
               <div className="hidden lg:block">
                 <img
                   className="w-full"
